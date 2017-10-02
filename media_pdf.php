@@ -42,38 +42,55 @@
 
     <div class="innercontent" style="background: #f7f7f7">
       <div class="row">
-        <div class="col-md-12 text-center media-center">
-          <h1>
+        <div class="col-md-12 media-center">
+          <h1 class="text-center">
             <span class="fa-stack">
             <i class="fa fa-file-pdf-o fa-stack-1x"></i>
             </span><span class="border_bottom">PDF</span>
           </h1>
           <div class="container">
             <div id="pdf-section">
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
-              <div class="col-md-3">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                  <a href="media/doc/pdf-sample.pdf">Sample PDF</a>
-              </div>
+              <table class="table table-bordered table-responsive table-striped">
+                <thead>
+                  <tr>
+                    <th width="15px">#</th>
+                    <th>Report Name</th>
+                    <th width="20%" class="text-center">Download</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Sample PDF</td>
+                    <td class="text-center"><a href="media/doc/pdf-sample.pdf"><i class="fa fa-download" aria-hidden="true"></i></a></td>
+                  </tr>
+                </tbody>
+            </table>
             </div>
           </div>
         </div>
