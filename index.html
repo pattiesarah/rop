@@ -272,33 +272,6 @@
             </div>
          </div>
       </div>    
-   </div>    
-   <div class="readandmap">
-   <div class="container ">
-      <div class="row">
-         <div class="col-md-12 mapsearch">               
-            <div class="pull-left" style="padding: 3px">
-              <label>
-               <select name="category" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value); loadTown();">
-                  <option data-icon="glyphicon-home" value="">Select Location</option>
-                  <option  value="Muscat">Muscat</option>
-                  <option  value="Salalah">Salalah</option>
-                  <option  value="Dhofar">Dhofar</option>
-               </select>
-             </label>
-            </div>
-            <div class="pull-left" style="padding: 3px">
-               <div aria-labelledby="dropdownMenuButton">
-                  <script type="text/javascript" language="JavaScript">
-                     document.write('<label><select onchange="loadOffice();" name="subcategory" id="subcategory"><option value="">Select office</option></select> </label>')
-                  </script>
-               </div>
-            </div>            
-            <div id="map"></div>
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117009.9018939686!2d58.3646958!3d23.5842615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2z0JzQsNGB0LrQsNGCLCDQntC80LDQvQ!5e0!3m2!1sru!2sby!4v1493156983054" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-         </div>
-      </div>
-   </div>
    </div>
    <div class="articles">
    <div class="container">
@@ -373,7 +346,35 @@
             </div>
          </div>
       </div>
+   </div>    
+   <div class="readandmap">
+      <div class="row">
+         <div class="col-md-12 mapsearch">  
+            <div class="office_search">
+              <div class="pull-left" style="padding: 3px">
+                <label>
+                 <select name="category" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value); loadTown();">
+                    <option data-icon="glyphicon-home" value="">Location</option>
+                    <option  value="Muscat">Muscat</option>
+                    <option  value="Salalah">Salalah</option>
+                    <option  value="Dhofar">Dhofar</option>
+                 </select>
+               </label>
+              </div>
+              <div class="pull-left" style="padding: 3px">
+                 <div aria-labelledby="dropdownMenuButton">
+                    <script type="text/javascript" language="JavaScript">
+                       document.write('<label><select onchange="loadOffice();" name="subcategory" id="subcategory"><option value="">Office</option></select> </label>')
+                    </script>
+                 </div>
+              </div>
+            </div>            
+            <div id="map"></div>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117009.9018939686!2d58.3646958!3d23.5842615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2z0JzQsNGB0LrQsNGCLCDQntC80LDQvQ!5e0!3m2!1sru!2sby!4v1493156983054" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+         </div>
+      </div>
    </div>
+   
    <div class="container-fluid prefooter">
       <div class="container">
          <div class="row">
@@ -449,14 +450,124 @@
       var marker8;*/
       var map;
 
-      function initMap() {
-       map = new google.maps.Map(document.getElementById('map'), {
-         zoom: 6,
-         center: {lat: 21.125149, lng: 56.478045}
-      });
+      var styles = [
+    {
+        "featureType": "administrative",
+        "elementType": "labels.text.fill",
+        "stylers": [
+            {
+                "color": "#444444"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#f2f2f2"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#e1a837"
+            }
+        ]
+    },
+    {
+        "featureType": "landscape",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "color": "#ffffff"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "all",
+        "stylers": [
+            {
+                "saturation": -100
+            },
+            {
+                "lightness": 45
+            }
+        ]
+    },
+    {
+        "featureType": "road.highway",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road.arterial",
+        "elementType": "labels.icon",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#46bcec"
+            },
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "color": "#005b85"
+            }
+        ]
     }
+]
+;
 
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+           zoom: 5,
+           center: {lat: 21.125149, lng: 56.478045},
+           styles: styles
+        });
+      }
 
+    
     function init(){
        clearMarkers();
        addMarkerWithTimeout(neighborhoods[0], 0 * 200);
@@ -489,8 +600,9 @@
              switch(selectedValue){
               case "Muscat":
               map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 12,
-               center: {lat: 23.584480, lng: 58.289138}
+                zoom: 12,
+                center: {lat: 23.584480, lng: 58.289138},
+                styles: styles
             });
               clearMarkers();
               addMarkerWithTimeout(neighborhoods[0], 0 * 200);
@@ -501,8 +613,9 @@
               break;
               case "Salalah":
               map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 12,
-               center: {lat: 17.021769, lng: 54.089239}
+              zoom: 12,
+              center: {lat: 17.021769, lng: 54.089239},
+              styles: styles
             });
               clearMarkers();
               addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
@@ -513,8 +626,9 @@
               break;
               case "Dhofar":
               map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 12,
-               center: {lat: 17.068712, lng: 54.142662}
+                zoom: 12,
+                center: {lat: 17.068712, lng: 54.142662},
+                styles: styles
             });
               clearMarkers();
               addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
@@ -579,8 +693,9 @@
              clearMarkers();
              addMarkerWithTimeout(neighborhoods[0], 0 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 23.584480, lng: 58.289138}
+              zoom: 17,
+              center: {lat: 23.584480, lng: 58.289138},
+              styles: styles
             });
           }
 
@@ -589,7 +704,8 @@
              addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 23.624106, lng: 58.266611}
+               center: {lat: 23.624106, lng: 58.266611},
+           styles: styles
             });
           }
 
@@ -598,7 +714,8 @@
              addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 23.557038, lng: 58.354178}
+               center: {lat: 23.557038, lng: 58.354178},
+           styles: styles
             });
           }
 
@@ -607,7 +724,8 @@
              addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 17.021769, lng: 54.089239}
+               center: {lat: 17.021769, lng: 54.089239},
+           styles: styles
             });
           }
 
@@ -616,7 +734,8 @@
              addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 17.037646, lng: 54.177997}
+               center: {lat: 17.037646, lng: 54.177997},
+           styles: styles
             });
           }
 
@@ -625,7 +744,8 @@
              addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 17.051761, lng: 54.019725}
+               center: {lat: 17.051761, lng: 54.019725},
+           styles: styles
             });
           }
 
@@ -634,7 +754,8 @@
              addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 17.068712, lng: 54.142662}
+               center: {lat: 17.068712, lng: 54.142662},
+           styles: styles
             });
           }
 
@@ -643,7 +764,8 @@
              addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
-               center: {lat: 17.092702, lng: 54.084694}
+               center: {lat: 17.092702, lng: 54.084694},
+           styles: styles
             });
           }
 
