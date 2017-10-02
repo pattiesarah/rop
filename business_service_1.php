@@ -40,7 +40,22 @@
 </div>
 
 <div class="container innercontent business">
-  <div class="row">
+  <div class="row" dir="rtl">
+    <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
+      <div class="col-md-12">
+        <h4>Related Links</h4>
+        <hr>
+      </div>
+      <div class="col-md-12 active">
+        <a href="business_service_1.php"><i class="fa fa-download" aria-hidden="true"></i>Import</a>
+      </div>
+      <div class="col-md-12">
+        <a href="business_service_2.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Temporary Export</a>
+      </div>
+      <div class="col-md-12">
+        <a href="business_service_3.php"><i class="fa fa-cloud-download" aria-hidden="true"></i>Temporary Import</a>
+      </div>
+    </div>
     <div class="col-md-9">
       <h3>Import</h3>
       <p><span>Service delivered:</span>  Import</p>
@@ -56,21 +71,6 @@
           <li>Import link</li>
         </ul>
       </p>
-    </div>
-    <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
-      <div class="col-md-12">
-        <h4>Related Links</h4>
-        <hr>
-      </div>
-      <div class="col-md-12 active">
-        <a href="business_service_1.php"><i class="fa fa-download" aria-hidden="true"></i>Import</a>
-      </div>
-      <div class="col-md-12">
-        <a href="business_service_2.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Temporary Export</a>
-      </div>
-      <div class="col-md-12">
-        <a href="business_service_3.php"><i class="fa fa-cloud-download" aria-hidden="true"></i>Temporary Import</a>
-      </div>
     </div>
   </div>
 </div>

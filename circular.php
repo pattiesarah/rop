@@ -40,15 +40,15 @@
     </div>
 
     <div class="container report-content">
-        <div class="row">
+        <div class="row" dir="rtl">
             <div class="col-md-12 text-center">
-                <div class="col-md-12th text-left">
+                <div class="col-md-12 table-responsive text-right">
                     <h3> Oman Custom Tariffs</h3>
-                    <table class="table table-bordered table-responsive table-striped">
+                    <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th width="15px">#</th>
-                            <th>Report Name</th>
+                            <th class="text-right">Report Name</th>
                             <th width="20%" class="text-center">Download</th>
                           </tr>
                         </thead>
@@ -71,13 +71,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-12th text-left">
+                <div class="col-md-12 table-responsive text-right">
                     <h3>Customs Statistics Exports</h3>
-                    <table class="table table-bordered table-responsive table-striped">
+                    <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th width="15px">#</th>
-                            <th>Report Name</th>
+                            <th class="text-right">Report Name</th>
                             <th width="20%" class="text-center">Download</th>
                           </tr>
                         </thead>
@@ -125,13 +125,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-12th text-left">
+                <div class="col-md-12 table-responsive text-right">
                     <h3>Unified Guide for Customs Procedures</h3>
-                    <table class="table table-bordered table-responsive table-striped">
+                    <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th width="15px">#</th>
-                            <th>Report Name</th>
+                            <th class="text-right">Report Name</th>
                             <th width="20%" class="text-center">Download</th>
                           </tr>
                         </thead>
@@ -144,13 +144,13 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="col-md-12th text-left">
+                <div class="col-md-12 table-responsive text-right">
                     <h3>Permit and License User Guide</h3>
-                    <table class="table table-bordered table-responsive table-striped">
+                    <table class="table table-bordered table-striped">
                         <thead>
                           <tr>
                             <th width="15px">#</th>
-                            <th>Report Name</th>
+                            <th class="text-right">Report Name</th>
                             <th width="20%" class="text-center">Download</th>
                           </tr>
                         </thead>

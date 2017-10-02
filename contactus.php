@@ -46,7 +46,7 @@
 
 <div class="container-fluid contactusicons">
     <div class="container">
-        <div class="row">
+        <div class="row" dir="rtl">
             <div class="col-md-4">
                 <h1><span><img src="images/contactsicon1.png" alt=""></span>Have any questions?<br><span>support@customs.gov.om</span></h1>
             </div>

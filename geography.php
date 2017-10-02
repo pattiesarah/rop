@@ -40,19 +40,7 @@
 </div>
 
 <div class="container about-content">
-  <div class="row">
-    <div class="col-md-9">
-      <h3>About Oman’s geographical situation</h3>
-      <p style="text-align: justify;">
-        The Sultanate of Oman’s vital geographical location has been an important factor in its political and economic development and stability. Situated in the extreme south-eastern corner of the Arabian Peninsula, extending from latitude 16.40 to 26.20 degrees north and longitude 51.50 to 59.40 degrees east, its 3,165 kilometer-long coastline runs from the Arabian Sea and the entrance to the Indian Ocean in the far south-west, to the Oman Sea and Musandam in the north, where it overlooks the strategic Strait of Hormuz and the entrance to the Gulf.
-      </p>
-      <h3>Oman between the past and present : Geographical Situation</h3>
-      <p style="text-align: justify;">
-        Through its long history,Oman is considered as an active center interacted in the ancient world. Oman was a vital center on what was called   “ the silk way “ between the  East and the West. Up to the last half of the 19th century Oman had blooming marine and commercial activities from its ports on the Indian ocean. Therefore, from an early time its relationships extended to various global powers and in an international context through strong cultural ties with its gulf and Arab neighbours, Oman quickly established itself as a centre of communication between peoples.
-    
-        The modern renaissance followed from this civilized ground;Added to that Oman has the necessary elements to build a bright and promising future connectingits Arabic traditions of the past and the present. The important element of all is the awareness and historical leadership of the Omani people who made his civilization by his own hands. In addition to that Oman will develop its strategic situation interacting effectively with humanitywhile continuing along its present path for a renewed and prosperous future. 
-      </p>
-    </div>
+  <div class="row" dir="rtl">
     <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
       <div class="col-md-12">
         <h4>Related Links</h4>
@@ -70,6 +58,18 @@
       <div class="col-md-12">
         <a href="directorate.php"><i class="fa fa-users" aria-hidden="true"></i><span>Directorate</span></a>
       </div>
+    </div>
+    <div class="col-md-9">
+      <h3>About Oman’s geographical situation</h3>
+      <p style="text-align: justify;">
+        The Sultanate of Oman’s vital geographical location has been an important factor in its political and economic development and stability. Situated in the extreme south-eastern corner of the Arabian Peninsula, extending from latitude 16.40 to 26.20 degrees north and longitude 51.50 to 59.40 degrees east, its 3,165 kilometer-long coastline runs from the Arabian Sea and the entrance to the Indian Ocean in the far south-west, to the Oman Sea and Musandam in the north, where it overlooks the strategic Strait of Hormuz and the entrance to the Gulf.
+      </p>
+      <h3>Oman between the past and present : Geographical Situation</h3>
+      <p style="text-align: justify;">
+        Through its long history,Oman is considered as an active center interacted in the ancient world. Oman was a vital center on what was called   “ the silk way “ between the  East and the West. Up to the last half of the 19th century Oman had blooming marine and commercial activities from its ports on the Indian ocean. Therefore, from an early time its relationships extended to various global powers and in an international context through strong cultural ties with its gulf and Arab neighbours, Oman quickly established itself as a centre of communication between peoples.
+    
+        The modern renaissance followed from this civilized ground;Added to that Oman has the necessary elements to build a bright and promising future connectingits Arabic traditions of the past and the present. The important element of all is the awareness and historical leadership of the Omani people who made his civilization by his own hands. In addition to that Oman will develop its strategic situation interacting effectively with humanitywhile continuing along its present path for a renewed and prosperous future. 
+      </p>
     </div>
   </div>
 </div>

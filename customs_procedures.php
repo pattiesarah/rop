@@ -41,7 +41,7 @@
 
 <div class="container customs-content">
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" dir="rtl">
       <div class="text-center">
         <h1><span class="border_bottom">Customs Services</span></h1>
       </div>

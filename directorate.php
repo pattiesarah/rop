@@ -40,7 +40,25 @@
 </div>
 
 <div class="container about-content">
-  <div class="row">
+  <div class="row" dir='rtl'>
+    <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
+      <div class="col-md-12">
+        <h4>Related Links</h4>
+        <hr>
+      </div>
+      <div class="col-md-12">
+        <a href="geography.php"><i class="fa fa-map-marker"></i><span>Geographical Location</span></a>
+      </div>
+      <div class="col-md-12">
+        <a href="invest_oman.php"><i class="fa fa-money" aria-hidden="true"></i><span>Invest in Oman</span></a>
+      </div>
+      <div class="col-md-12">
+        <a href="bayan.php"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Bayan System</span></a>
+      </div>
+      <div class="col-md-12 active">
+        <a href="directorate.php"><i class="fa fa-users" aria-hidden="true"></i><span>Directorate</span></a>
+      </div>
+    </div>
     <div class="col-md-9 marginTop50">
       <p style="text-align: justify;">
         The Directorate General of Customs is established to execute the customs procedures and security supervision on imports and exports. It is also concerned with collecting customs fees and duties combating smuggling and preventing the entry of banned goods according to the agreed laws and regulation.
@@ -67,24 +85,6 @@
           <li>Collecting customs revenues efficiently and effictively. </li>
         </ul>
       </p>
-    </div>
-    <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
-      <div class="col-md-12">
-        <h4>Related Links</h4>
-        <hr>
-      </div>
-      <div class="col-md-12">
-        <a href="geography.php"><i class="fa fa-map-marker"></i><span>Geographical Location</span></a>
-      </div>
-      <div class="col-md-12">
-        <a href="invest_oman.php"><i class="fa fa-money" aria-hidden="true"></i><span>Invest in Oman</span></a>
-      </div>
-      <div class="col-md-12">
-        <a href="bayan.php"><i class="fa fa-sign-in" aria-hidden="true"></i><span>Bayan System</span></a>
-      </div>
-      <div class="col-md-12 active">
-        <a href="directorate.php"><i class="fa fa-users" aria-hidden="true"></i><span>Directorate</span></a>
-      </div>
     </div>
   </div>
 </div>

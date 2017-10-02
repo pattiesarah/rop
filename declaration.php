@@ -40,7 +40,7 @@
 </div>
 
 <div class="container e-service-content">
-  <div class="row">
+  <div class="row" dir="rtl">
     <div class="col-md-12">
       <p style="text-align: justify;"><b>Declaration processing e-Service enables the Importer/Exporter (or their authorized agent) of goods to declare and clear the goods with Directorate General of Customs. <br>The declaration can be made under the following regimes and declaration types:</b>
       <h3>Import</h3>

@@ -40,23 +40,9 @@
 </div>
 
 <div class="container about-content">
-  <div class="row">
+  <div class="row" dir="rtl">
     <div class="text-center">
       <h1><span class="border_bottom">History of Omani Customs</span></h1>
-    </div>
-    <div class="col-md-9 marginTop50">
-      <p style="text-align: justify;">
-        Directorate General of Customs is responsible for customs control and security of export and import affairs, collecting applicable customs duties and combating restricted and prohibited smuggled goods according to internationally recognized rules, regulations and norms. In response to the fast pace of global development, Directorate General Customs has instituted its own modernization programme. Computerized customs procedures are now provided at all customs entry and exit-points of Oman to encourage and enable trade facilitation.
-      </p>
-      <p style="text-align: justify;">
-        Oman Customs was established in the early part of the 20th century and its first headquarters premises were built in 1924. Building on its pioneering status, Oman Customs was one of the first administered organization in the region.   At that time Oman Customs was the only resource for the State economy and its organization was augmented by some experts from abroad who helped to develop the customs directorate and increase revenues.
-      </p>
-      <p style="text-align: justify;">            
-        Recently, the Directorate General of Customs witnessed a huge shift towards development in quality and quantity alike;this development helps to ensure Oman’s strategic place in a globalized world and mirrors the changes in world customs reform that is taking place regionally and locally.
-      </p>
-      <p style="text-align: justify;">      
-        The Directorate General of Customs is implementing various development modernization systems, and is setting future plans for capacity building at customs in the frame of applying the electronic governance concept.
-      </p>
     </div>
     <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
       <div class="col-md-12">
@@ -75,6 +61,21 @@
       <div class="col-md-12">
         <a href="directorate.php"><i class="fa fa-users" aria-hidden="true"></i><span>Directorate</span></a>
       </div>
+    </div>
+
+    <div class="col-md-9 marginTop50">
+      <p style="text-align: justify;">
+        Directorate General of Customs is responsible for customs control and security of export and import affairs, collecting applicable customs duties and combating restricted and prohibited smuggled goods according to internationally recognized rules, regulations and norms. In response to the fast pace of global development, Directorate General Customs has instituted its own modernization programme. Computerized customs procedures are now provided at all customs entry and exit-points of Oman to encourage and enable trade facilitation.
+      </p>
+      <p style="text-align: justify;">
+        Oman Customs was established in the early part of the 20th century and its first headquarters premises were built in 1924. Building on its pioneering status, Oman Customs was one of the first administered organization in the region.   At that time Oman Customs was the only resource for the State economy and its organization was augmented by some experts from abroad who helped to develop the customs directorate and increase revenues.
+      </p>
+      <p style="text-align: justify;">            
+        Recently, the Directorate General of Customs witnessed a huge shift towards development in quality and quantity alike;this development helps to ensure Oman’s strategic place in a globalized world and mirrors the changes in world customs reform that is taking place regionally and locally.
+      </p>
+      <p style="text-align: justify;">      
+        The Directorate General of Customs is implementing various development modernization systems, and is setting future plans for capacity building at customs in the frame of applying the electronic governance concept.
+      </p>
     </div>
   </div>
 </div>

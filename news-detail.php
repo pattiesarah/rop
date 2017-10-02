@@ -40,7 +40,7 @@
     </div>
 
     <div class="container innercontent news-detail">
-      <div class="row">
+      <div class="row" dir="rtl">
           <div class="col-md-12">
              <img src="images/registration_trade.png" alt="">
              <a class="news-download" href="https://www.customs.gov.om/portal/rest/jcr/repository/collaboration/sites/esw/documents/New%20Customs%20Fees.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>

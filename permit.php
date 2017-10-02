@@ -40,7 +40,7 @@
 </div>
 
 <div class="container e-service-content">
-  <div class="row">
+  <div class="row" dir="rtl">
     <div class="col-md-12">
       <p style="text-align: justify;"><b>Permits, Licences & Exemptions e-Service allows Importers /Exporters to apply electronically trade permits, licences and exemptions from various Controlling Agencies (CA). The complete list of Controlling Agencies (CA) and the corresponding permits, licences, exemptions that can be applied through this e-Service.</b>
       </p>

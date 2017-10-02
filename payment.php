@@ -40,7 +40,7 @@
 </div>
 
 <div class="container e-service-content">
-  <div class="row">
+  <div class="row" dir="rtl">
     <div class="col-md-12">
       <p style="text-align: justify;"><b>Payment & Refund is integrated in the Declaration e-Service and enables online payment of customs fees, duties and penalties. Refunds can be applied through the service.</b></p>
       <a href="login.php">Login</a>      

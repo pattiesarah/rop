@@ -40,30 +40,10 @@
     </div>
 
     <div class="container articles news">
-      <div class="row">
+      <div class="row" dir="rtl">
           <div class="col-md-12 text-center">
             <h1><span class="border_bottom">Articles</span></h1>
-          </div> 
-
-          <div class="col-md-12 news-search">
-            <div class="form-group pull-right" style="margin-right: 20px;">
-              <select class="form-control">
-                <option>Search by Year</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>2016</option>
-              </select>
-            </div>
-            <div class="form-group pull-right" style="margin-right: 20px;">
-              <select class="form-control">
-                <option>Search by Month</option>
-                <option>Jan</option>
-                <option>Feb</option>
-                <option>Mar</option>
-              </select>
-            </div>
           </div>  
-
           <div class="col-md-12">
             <div class="col-md-3 col-sm-6">
                <img src="images/registration_trade.png" alt="">
@@ -136,7 +116,7 @@
       </div>
    </div>
   <div class="container">
-    <div class="row">
+    <div class="row" dir="rtl">
       <div class="col-md-12 text-center">
         <ul class="pagination">
           <li class="active"><a href="#">1</a></li>

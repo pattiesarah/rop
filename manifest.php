@@ -40,7 +40,7 @@
 </div>
 
 <div class="container e-service-content">
-  <div class="row">
+  <div class="row" dir="rtl">
     <div class="col-md-12">
       <p style="text-align: justify;"><b>Manifest processing e-Service enables online submission and registration of Manifest for Shipping Agents and Freight Forwarders/Consolidators. This service also enables electronic submission of manifest from agent's system to Bayan system in predefined XML format.</b></p>
       <a href="login.php">Login</a>      

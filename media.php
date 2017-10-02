@@ -40,7 +40,7 @@
         </div>
     </div>
     <div class="innercontent">
-      <div class="row marginTop50">
+      <div class="row marginTop50" dir="rtl">
       <!-- <div class="col-md-12 text-center media-center">
         <h1>
             <span class="fa-stack">

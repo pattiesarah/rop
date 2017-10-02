@@ -53,12 +53,22 @@
 </head>
 <body>
   <?php
-  include('header.php');
+    include('header.php');
   ?>
    <div class="container-fluid" style="background: #EDEEEE; padding-top: 15px;">
    <div class="container">
    <div class="row">
-      <div class="col-md-8 col-sm-12 hidden-sm hidden-xs" style="padding-right:5px;">
+    <div class="col-md-4 col-sm-12" style="padding-right:5px;">
+         <div class="header-service-block">
+            <a class="content_link " href="business_service_1.php"><p><i class="fa fa-briefcase" aria-hidden="true"></i></p><p class="title">Business Services</p></a>
+            <a class="content_link " href="individual_service_1.php"><p><i class="fa fa-user-circle-o" aria-hidden="true"></i></p><p class="title">Individual Services</p></a>
+            <a class="content_link " href="business_service_1.php"><p><i class="fa fa-laptop" aria-hidden="true"></i></p><p class="title">Government Services</p></a>
+            <a class="content_link " href="individual_service_1.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p class="title">Traveller Services</p></a>
+            <a class="content_link " href="circular.php"><p><i class="fa fa-file-text-o" aria-hidden="true"></i></p><p style="padding-top: 22px;" class="title">Circulars</p></a>
+            <a class="content_link " href="reports.php"><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><p style="padding-top: 22px;" class="title">Statistics</p></a>
+         </div>
+      </div>
+      <div class="col-md-8 col-sm-12" style="padding-left:5px;">
          <div id="bootstrap-touch-slider" class="carousel bs-slider fade control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
             <div class="carousel-inner" role="listbox">
                <div class="item slide1 active">
@@ -103,19 +113,10 @@
             </a>
          </div>
       </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-         <div class="header-service-block">
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-briefcase" aria-hidden="true"></i></p><p class="title">Business Services</p></a></div>
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-user-circle-o" aria-hidden="true"></i></p><p class="title">Individual Services</p></a></div>
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-laptop" aria-hidden="true"></i></p><p class="title">Government Services</p></a></div>
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p class="title">Traveller Services</p></a></div>
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="circular.php"><p><i class="fa fa-file-text-o" aria-hidden="true"></i></p><p class="title circular">Circulars</p></a></div>
-            <div class="col-md-4 col-sm-2 col-xs-4"><a class="content_link " href="reports.php"><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><p class="title statistics">Statistics</p></a></div>
-        </div>
-      </div>
+      
    </div>
    <div class="news-scroller">
-      <marquee scrollamount="3"><p><span>Dear Bayan User: The Directorate General of Customs intends to stop using name and password method to access  Bayan System, instead to access the system through ID/resident Card (TAM service. The system will not accept access via user name and password starting from 31/7/2017.</span><span style="margin-left: 80px">The Directorate General of Customs intends to stop using name and password method to access  Bayan System, instead to access the system through ID/resident Card (TAM service. The system will not accept access via user name and password starting from 31/7/2017.</span></p></marquee>
+      <marquee scrollamount="3" direction="right"><p><span>Dear Bayan User: The Directorate General of Customs intends to stop using name and password method to access  Bayan System, instead to access the system through ID/resident Card (TAM service. The system will not accept access via user name and password starting from 31/7/2017.</span><span style="margin-left: 80px">The Directorate General of Customs intends to stop using name and password method to access  Bayan System, instead to access the system through ID/resident Card (TAM service. The system will not accept access via user name and password starting from 31/7/2017.</span></p></marquee>
    </div>
    </div>
    </div>
@@ -197,7 +198,7 @@
                <img src="images/registration_trade.png" alt="">
                <h2>New Customs Fees</h2>
                <h3>Decision #38/2017</h3>
-               <hr>
+               <hr align="right">
                <p>To amend the fees for services provided by Directorate General of Customs.</p>
                <a class="more" href="news-detail.php">Read..</a>
             </div>
@@ -205,7 +206,7 @@
                <img src="images/extention_of_temporary.png" alt="">
                <h2>New Broker Fees</h2>
                <h3>Decision #37/2017</h3>
-               <hr>
+               <hr align="right">
                <p>Amending some of the provisions of the executive decree organizing the brokering activity</p>
                <a class="more" href="news-detail.php">Read..</a>
             </div>
@@ -213,7 +214,7 @@
                <img src="images/transfer_consignment.png" alt="">
                <h2>Transfer consignment</h2>
                <h3>Services provided</h3>
-               <hr>
+               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
             </div>
@@ -221,7 +222,7 @@
                <img src="images/temporary_import.png" alt="">
                <h2>Temporary import</h2>
                <h3>Services provided</h3>
-               <hr>
+               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
             </div>
@@ -234,7 +235,7 @@
          <div class="row">
             <div class="col-md-12">
                <h1><span class="border_bottom">Social Media Activity</span></h1>
-               <div class="col-md-4 hidden-sm hidden-xs">
+               <div class="col-md-4 col-sm-4">
                   <div class="twitter-div">
                      <div class="text-center">
                         <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
@@ -242,7 +243,7 @@
                      <a class="twitter-timeline" data-width="370" data-height="450" href="https://twitter.com/omancustoms">Tweets by omancustoms</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                   </div>   
                </div>
-               <div class="col-md-4 hidden-sm hidden-xs">
+               <div class="col-md-4 col-sm-4">
                   <div class="insta-div">
                      <div class="text-center">
                      <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
@@ -250,7 +251,7 @@
                      <iframe src="http://auen.ru/instablock.php?u=royal_oman_police&count=12&w=100&fw=370&fh=450&il=0&tb=Royal Oman Police&cb=2&st=1&tl=View&cl=1" style="width:100%;height:450px;border: 0px;"></iframe>
                   </div>
                </div>
-               <div class="col-md-4 hidden-sm hidden-xs">
+               <div class="col-md-4 col-sm-4">
                   <div class="fb-div">
                      <div class="text-center">
                         <p><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p>
@@ -262,55 +263,37 @@
          </div>
       </div>
    </div>    
-   <div class="container-fluid md-socials">
-      <div class="container">
-         <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="https://twitter.com/omancustoms" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="http://instagram.com/royal_oman_police" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
-            </div>
-            <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="https://www.facebook.com/ropomancustoms/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p>
-            </div>
-          </div>
-        </div>
+   <div class="readandmap">
+      <div class="row">
+         <div class="col-md-12 mapsearch">  
+            <div class="office_search">
+              <div class="pull-left" style="padding: 3px">
+                <label>
+                 <select name="category" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value); loadTown();">
+                    <option data-icon="glyphicon-home" value="">Location</option>
+                    <option  value="Muscat">Muscat</option>
+                    <option  value="Salalah">Salalah</option>
+                    <option  value="Dhofar">Dhofar</option>
+                 </select>
+               </label>
+              </div>
+              <div class="pull-left" style="padding: 3px">
+                 <div aria-labelledby="dropdownMenuButton">
+                    <script type="text/javascript" language="JavaScript">
+                       document.write('<label><select onchange="loadOffice();" name="subcategory" id="subcategory"><option value="">Office</option></select> </label>')
+                    </script>
+                 </div>
+              </div>
+            </div>            
+            <div id="map"></div>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117009.9018939686!2d58.3646958!3d23.5842615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2z0JzQsNGB0LrQsNGCLCDQntC80LDQvQ!5e0!3m2!1sru!2sby!4v1493156983054" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+         </div>
       </div>
-    </div>
-
-
-
-
-    <div class="readandmap">
-      <div class="mapsearch">  
-        <div class="office_search">
-          <div class="pull-left" style="padding: 3px">
-            <label>
-             <select name="category" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value); loadTown();">
-                <option data-icon="glyphicon-home" value="">Location</option>
-                <option  value="Muscat">Muscat</option>
-                <option  value="Salalah">Salalah</option>
-                <option  value="Dhofar">Dhofar</option>
-             </select>
-           </label>
-          </div>
-          <div class="pull-left" style="padding: 3px">
-             <div aria-labelledby="dropdownMenuButton">
-                <script type="text/javascript" language="JavaScript">
-                   document.write('<label><select onchange="loadOffice();" name="subcategory" id="subcategory"><option value="">Office</option></select> </label>')
-                </script>
-             </div>
-          </div>
-        </div>            
-        <div id="map"></div>
-        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117009.9018939686!2d58.3646958!3d23.5842615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2z0JzQsNGB0LrQsNGCLCDQntC80LDQvQ!5e0!3m2!1sru!2sby!4v1493156983054" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-      </div>
-    </div>
+   </div>
    
-   <?php
+  <?php
     include('footer.php');
-   ?>
+  ?>
    <script type="text/javascript" src="js/map.js"></script>
    <script>
 
@@ -446,7 +429,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-           zoom: 5,
+           zoom: 6,
            center: {lat: 21.125149, lng: 56.478045},
            styles: styles
         });
@@ -590,7 +573,7 @@
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
                center: {lat: 23.624106, lng: 58.266611},
-           styles: styles
+               styles: styles
             });
           }
 
@@ -600,7 +583,7 @@
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
                center: {lat: 23.557038, lng: 58.354178},
-           styles: styles
+              styles: styles
             });
           }
 
@@ -610,7 +593,7 @@
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
                center: {lat: 17.021769, lng: 54.089239},
-           styles: styles
+              styles: styles
             });
           }
 
@@ -620,7 +603,7 @@
              map = new google.maps.Map(document.getElementById('map'), {
                zoom: 17,
                center: {lat: 17.037646, lng: 54.177997},
-           styles: styles
+              styles: styles
             });
           }
 
@@ -963,6 +946,62 @@
       <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
-      
+      <script>
+
+         $('.language').on('click',function(){
+            if( $(this).php() == 'English' ){
+               $(this).php('Arabic');
+            }else{
+               $(this).php('English');
+            }
+         });
+         $('.grayscale').on('click',function(){
+            if($('body').hasClass('grayscale_body')){
+               $('body').removeClass('grayscale_body');
+            }else{
+               $('body').addClass('grayscale_body');
+            }
+         });
+         $('.small-font').on('click',function(){
+            $('body').removeClass('zoom-xl');
+            $('body').removeClass('zoom-l');
+            if(!$('body').hasClass('zoom-xs')){
+               if($('body').hasClass('zoom-s')){
+                  $('body').addClass('zoom');
+                  $('body').removeClass('zoom');
+                  $('body').removeClass('zoom-s');
+                  $('body').addClass('zoom-xs');
+               }else{
+                  $('body').addClass('zoom');
+                  $('body').removeClass('zoom');
+                  $('body').addClass('zoom-s');
+               }
+            }
+         });
+         $('.normal-font').on('click',function(){
+            $('body').removeClass('zoom-xs');
+            $('body').removeClass('zoom-s');
+            $('body').removeClass('zoom-xl');
+            $('body').removeClass('zoom-l');
+            $('body').addClass('zoom');
+         });
+         $('.large-font').on('click',function(){
+            $('body').removeClass('zoom-xs');
+            $('body').removeClass('zoom-s');
+            if(!$('body').hasClass('zoom-xl')){
+               if($('body').hasClass('zoom-l')){
+                  $('body').addClass('zoom');
+                  $('body').removeClass('zoom');
+                  $('body').removeClass('zoom-l');
+                  $('body').addClass('zoom-xl');
+               }else{
+                  $('body').addClass('zoom');
+                  $('body').removeClass('zoom');
+                  $('body').addClass('zoom-l');
+               }
+            }
+         });
+
+      </script>
    </body>
    </html>
