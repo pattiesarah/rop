@@ -1,0 +1,72 @@
+{
+	"location0": [
+		{
+			"name": "Oman",
+			"lat": "21.125149",
+			"lng": "56.478045"
+		}],
+	"location1": [
+		{
+			"name": "Muscat",
+			"office_name": "Office 1",
+			"office_address": "Address 1",
+			"office_phone": "Phone 1",
+			"office_email": "Email 1",
+			"lat": "23.584480",
+			"lng": "58.289138"
+		},
+		{
+			"name": "Muscat",
+			"office_name": "Office 1_1",
+			"office_address": "Address 1_1",
+			"office_phone": "Phone 1_1",
+			"office_email": "Email 1_1",
+			"lat": "23.624106",
+			"lng": "58.266611"
+		},
+		{
+			"name": "Muscat",
+			"office_name": "Office 1_2",
+			"office_address": "Address 1_2",
+			"office_phone": "Phone 1_2",
+			"office_email": "Email 1_2",
+			"lat": "23.557038",
+			"lng": "58.354178"
+		}],
+	"location2": [{
+			"name": "Salalah",
+			"office_name": "Office 2",
+			"office_address": "Address 2",
+			"office_phone": "Phone 2",
+			"office_email": "Email 2",
+			"lat": "17.021769",
+			"lng": "54.089239"
+		},
+		{
+			"name": "Salalah",
+			"office_name": "Office 2_1",
+			"office_address": "Address 2_1",
+			"office_phone": "Phone 2_1",
+			"office_email": "Email 2_1",
+			"lat": "17.037646",
+			"lng": "54.177997"
+		}],
+	"location3": [{
+			"name": "Dhofar",
+			"office_name": "Office 2_2",
+			"office_address": "Address 2_2",
+			"office_phone": "Phone 2_2",
+			"office_email": "Email 2_2",
+			"lat": "17.051761",
+			"lng": "54.019725"
+		},
+		{
+			"name": "Dhofar",
+			"office_name": "Office 3",
+			"office_address": "Address 3",
+			"office_phone": "Phone 3",
+			"office_email": "Email 3",
+			"lat": "17.092702",
+			"lng": "54.084694"
+		}]
+}

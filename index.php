@@ -22,34 +22,6 @@
    <link rel="stylesheet" href="css/be_style.css">
    <link rel="stylesheet" href="css/custom.css"> -->
 
-   <script language="javascript" type="text/javascript">
-      function dynamicdropdown(listindex)
-      {
-       document.getElementById("subcategory").length = 0;
-       switch (listindex)
-       {
-        case "Muscat" :
-        document.getElementById("subcategory").options[0]=new Option("Select Office","");
-        document.getElementById("subcategory").options[1]=new Option("Office 1","Office 1");
-        document.getElementById("subcategory").options[2]=new Option("Office 1_1","Office 1_1");
-        document.getElementById("subcategory").options[3]=new Option("Office 1_2","Office 1_2");
-        break;
-
-        case "Salalah" :
-        document.getElementById("subcategory").options[0]=new Option("Select Office","");
-        document.getElementById("subcategory").options[1]=new Option("Office 2","Office 2");
-        document.getElementById("subcategory").options[2]=new Option("Office 2_1","Office 2_1");
-        document.getElementById("subcategory").options[3]=new Option("Office 2_2","Office 2_2");
-        break;
-        case "Dhofar" :
-        document.getElementById("subcategory").options[0]=new Option("Select Office","");
-        document.getElementById("subcategory").options[1]=new Option("Office 3","Office 3");
-        document.getElementById("subcategory").options[2]=new Option("Office 3_1","Office 3_1");
-        break;
-     }
-     return true;
-  }
-</script>
 </head>
 <body>
   <?php
@@ -266,13 +238,13 @@
       <div class="container">
          <div class="row">
             <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="https://twitter.com/omancustoms" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
+              <a href="https://twitter.com/omancustoms" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p></a>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="http://instagram.com/royal_oman_police" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
+              <a href="http://instagram.com/royal_oman_police" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p></a>
             </div>
             <div class="col-md-4 col-sm-4 col-xs-4">
-              <a href="https://www.facebook.com/ropomancustoms/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p>
+              <a href="https://www.facebook.com/ropomancustoms/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p></a>
             </div>
           </div>
         </div>
@@ -287,18 +259,13 @@
         <div class="office_search">
           <div class="pull-left" style="padding: 3px">
             <label>
-             <select name="category" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value); loadTown();">
-                <option data-icon="glyphicon-home" value="">Location</option>
-                <option  value="Muscat">Muscat</option>
-                <option  value="Salalah">Salalah</option>
-                <option  value="Dhofar">Dhofar</option>
-             </select>
+             <select name="category" id="category"></select>
            </label>
           </div>
           <div class="pull-left" style="padding: 3px">
              <div aria-labelledby="dropdownMenuButton">
                 <script type="text/javascript" language="JavaScript">
-                   document.write('<label><select onchange="loadOffice();" name="subcategory" id="subcategory"><option value="">Office</option></select> </label>')
+                   document.write('<label><select name="subcategory" id="subcategory"><option value="">Office</option></select> </label>')
                 </script>
              </div>
           </div>
@@ -315,14 +282,14 @@
    <script>
 
       var neighborhoods = [
-      {lat: 23.584480, lng: 58.289138},
-      {lat: 17.021769, lng: 54.089239},
-      {lat: 17.068712, lng: 54.142662},
-      {lat: 23.624106, lng: 58.266611},//Muscat 1_1
-      {lat: 23.557038, lng: 58.354178},//Muscat 1_2
-      {lat: 17.037646, lng: 54.177997},//Salalah 2_1
-      {lat: 17.051761, lng: 54.019725},//Salalah 2_2
-      {lat: 17.092702, lng: 54.084694}//Dhofar 3_1
+      // {lat: 23.584480, lng: 58.289138},
+      // {lat: 17.021769, lng: 54.089239},
+      // {lat: 17.068712, lng: 54.142662},
+      // {lat: 23.624106, lng: 58.266611},//Muscat 1_1
+      // {lat: 23.557038, lng: 58.354178},//Muscat 1_2
+      // {lat: 17.037646, lng: 54.177997},//Salalah 2_1
+      // {lat: 17.051761, lng: 54.019725},//Salalah 2_2
+      // {lat: 17.092702, lng: 54.084694}//Dhofar 3_1
       ];
 
 /*      var marker1;
@@ -444,525 +411,619 @@
 ]
 ;
 
+
       function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-           zoom: 5,
-           center: {lat: 21.125149, lng: 56.478045},
-           styles: styles
-        });
+        // map = new google.maps.Map(document.getElementById('map'), {
+        //    zoom: 5,
+        //    center: {lat: 21.125149, lng: 56.478045},
+        //    styles: styles
+        // });
       }
 
     
     function init(){
-       clearMarkers();
-       addMarkerWithTimeout(neighborhoods[0], 0 * 200);
-       clearMarkers();
-       addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
-       clearMarkers();
-       addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
-       clearMarkers();
-       addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
-       clearMarkers();
-       addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
-       clearMarkers();
-       addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
-       clearMarkers();
-       addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
-       clearMarkers();
-       addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout(neighborhoods[0], 0 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
+       // clearMarkers();
+       // addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
 
     }
 
-         /*    function loadTown(){
-             var selectBox = document.getElementById("category").value;
-             var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-             alert(selectBox);
-          }*/
+       /*    function loadTown(){
+           var selectBox = document.getElementById("category").value;
+           var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+           alert(selectBox);
+        }*/
 
-          function loadTown(){
-             var selectBox = document.getElementById("category");
-             var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-             switch(selectedValue){
-              case "Muscat":
-              map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
-                center: {lat: 23.584480, lng: 58.289138},
-                styles: styles
-            });
-              clearMarkers();
-              addMarkerWithTimeout(neighborhoods[0], 0 * 200);
-              clearMarkers();
-              addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
-              clearMarkers();
-              addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
-              break;
-              case "Salalah":
-              map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 12,
-              center: {lat: 17.021769, lng: 54.089239},
-              styles: styles
-            });
-              clearMarkers();
-              addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
-              clearMarkers();
-              addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
-              clearMarkers();
-              addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
-              break;
-              case "Dhofar":
-              map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 12,
-                center: {lat: 17.068712, lng: 54.142662},
-                styles: styles
-            });
-              clearMarkers();
-              addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
-              clearMarkers();
-              addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
-              break;
+        // function loadTown(){
+        //   var selectBox = document.getElementById("category");
+        //   var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        //   map = new google.maps.Map(document.getElementById('map'), {
+        //     zoom: 12,
+        //     center: position,
+        //     styles: styles
+        //   });
+        //   clearMarkers();
+        //   addMarkerWithTimeout(neighborhoods[0], 0 * 200);
+        // }
 
-           }
-        }
+      // function loadOffice(){
+      //   var office = document.getElementById("subcategory").value;
+      //   console.log(office);
+      //   switch(office){
+      //    case "Office 1":
 
-        function loadOffice(){
-          var office = document.getElementById("subcategory").value;
-          console.log(office);
-          switch(office){
-           case "Office 1":
-
-           drop1();
-           break;
-           case "Office 1_1":
-           drop1_1();
-           break;
-           case "Office 1_2":
-           drop1_2();
-           break;
-           case "Office 2":
-           drop2();
-           break;
-           case "Office 2_1":
-           drop2_1();
-           break;
-           case "Office 2_2":
-           drop2_2();
-           break;
-           case "Office 3":
-           drop3();
-           break;
-           case "Office 3_1":
-           drop3_1();
-           break;
-        }
-         /*        if(office = "Office 1"){
-                 alert("first");
-                 drop1();
-             }else{
-                 console.log("Не верный город");
-             };
-             if(office = "Office 2"){
-                 alert("second");
-                 drop2();
-             }else{
-                 console.log("Не верный город");
-             };
-             if(office = "Office 3"){
-                 alert("third");
-                 drop3();
-             }else{
-                 console.log("Не верный город");
-              };*/
+      //    drop1();
+      //    break;
+      //    case "Office 1_1":
+      //    drop1_1();
+      //    break;
+      //    case "Office 1_2":
+      //    drop1_2();
+      //    break;
+      //    case "Office 2":
+      //    drop2();
+      //    break;
+      //    case "Office 2_1":
+      //    drop2_1();
+      //    break;
+      //    case "Office 2_2":
+      //    drop2_2();
+      //    break;
+      //    case "Office 3":
+      //    drop3();
+      //    break;
+      //    case "Office 3_1":
+      //    drop3_1();
+      //    break;
+      // }
+       /*        if(office = "Office 1"){
+               alert("first");
+               drop1();
+           }else{
+               console.log("Не верный город");
            };
+           if(office = "Office 2"){
+               alert("second");
+               drop2();
+           }else{
+               console.log("Не верный город");
+           };
+           if(office = "Office 3"){
+               alert("third");
+               drop3();
+           }else{
+               console.log("Не верный город");
+            };
+         };*/
 
-           function drop1() {
-             clearMarkers();
-             addMarkerWithTimeout(neighborhoods[0], 0 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 17,
-              center: {lat: 23.584480, lng: 58.289138},
-              styles: styles
-            });
-          }
+        //  function drop1() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout(neighborhoods[0], 0 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //     zoom: 17,
+        //     center: {lat: 23.584480, lng: 58.289138},
+        //     styles: styles
+        //   });
+        // }
 
-          function drop1_1() {
-             clearMarkers();
-             addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 23.624106, lng: 58.266611},
-           styles: styles
-            });
-          }
+        // function drop1_1() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout1_1(neighborhoods[3], 3 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 23.624106, lng: 58.266611},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop1_2() {
-             clearMarkers();
-             addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 23.557038, lng: 58.354178},
-           styles: styles
-            });
-          }
+        // function drop1_2() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout1_2(neighborhoods[4], 4 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 23.557038, lng: 58.354178},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop2() {
-             clearMarkers();
-             addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 17.021769, lng: 54.089239},
-           styles: styles
-            });
-          }
+        // function drop2() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout2(neighborhoods[1], 1 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 17.021769, lng: 54.089239},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop2_1() {
-             clearMarkers();
-             addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 17.037646, lng: 54.177997},
-           styles: styles
-            });
-          }
+        // function drop2_1() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout2_1(neighborhoods[5], 5 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 17.037646, lng: 54.177997},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop2_2() {
-             clearMarkers();
-             addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 17.051761, lng: 54.019725},
-           styles: styles
-            });
-          }
+        // function drop2_2() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout2_2(neighborhoods[6], 6 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 17.051761, lng: 54.019725},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop3() {
-             clearMarkers();
-             addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 17.068712, lng: 54.142662},
-           styles: styles
-            });
-          }
+        // function drop3() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout3(neighborhoods[2], 2 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 17.068712, lng: 54.142662},
+        //  styles: styles
+        //   });
+        // }
 
-          function drop3_1() {
-             clearMarkers();
-             addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
-             map = new google.maps.Map(document.getElementById('map'), {
-               zoom: 17,
-               center: {lat: 17.092702, lng: 54.084694},
-           styles: styles
-            });
-          }
+        // function drop3_1() {
+        //    clearMarkers();
+        //    addMarkerWithTimeout3_1(neighborhoods[7], 7 * 200);
+        //    map = new google.maps.Map(document.getElementById('map'), {
+        //      zoom: 17,
+        //      center: {lat: 17.092702, lng: 54.084694},
+        //  styles: styles
+        //   });
+        // }
 
-          function addMarkerWithTimeout(position, timeout) {
+        // function addMarkerWithTimeout(position, timeout) {
 
-             window.setTimeout(function() {
-               var marker1 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Muscat, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
+        //    window.setTimeout(function() {
+        //      var marker1 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Muscat, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
 
-               var contentString = '<div id="content" style="">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black; font-size: 20px;">Muscat</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black; font-size: 10x;">Office Name: Muscat;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=23.584480,58.289138">Direction</a></p>'+
-               '</div>'+
-               '</div>';
+        //      var contentString = '<div id="content" style="">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black; font-size: 20px;">Muscat</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black; font-size: 10x;">Office Name: Muscat;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=23.584480,58.289138">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
 
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 500
-             });
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 500
+        //    });
 
-               marker1.addListener('click', function() {
-                 infowindow.open(map, marker1);
-              });
+        //      marker1.addListener('click', function() {
+        //        infowindow.open(map, marker1);
+        //     });
 
-            }, timeout);
+        //   }, timeout);
 
-          }
+        // }
 
-          function addMarkerWithTimeout1_1(position, timeout) {
-             window.setTimeout(function() {
-               var marker2 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Muscat1_1, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              }
-              );
+        // function addMarkerWithTimeout1_1(position, timeout) {
+        //    window.setTimeout(function() {
+        //      var marker2 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Muscat1_1, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     }
+        //     );
 
-               var contentString = '<div id="content">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black;">Muscat 1_1</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black;">Office Name: Muscat 1_1;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=23.624106,58.266611">Direction</a></p>'+
-               '</div>'+
-               '</div>';
+        //      var contentString = '<div id="content">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black;">Muscat 1_1</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black;">Office Name: Muscat 1_1;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=23.624106,58.266611">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
 
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
 
-               marker2.addListener('click', function() {
-                 infowindow.open(map, marker2);
-              });
-               /*markers[0].addListener('click', function() {
-                infowindow.open(map, markers[0]);
-             });*/
-
-
-          }, timeout);
-
-          }
-
-          function addMarkerWithTimeout1_2(position, timeout) {
-             window.setTimeout(function() {
-               var marker3 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Muscat1_2, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
-
-               var contentString = '<div id="content">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black;">Muscat 1_2</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black;">Office Name: Muscat 1_2;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=23.557038,58.354178">Direction</a></p>'+
-               '</div>'+
-               '</div>';
-
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
-
-               marker3.addListener('click', function() {
-                 infowindow.open(map, marker3);
-              });
-
-            }, timeout);
-          }
-
-          function addMarkerWithTimeout2(position, timeout) {
-
-             window.setTimeout(function() {
-               var marker4 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Salalah, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
-
-               var contentString = '<div id="content">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black;">Office Name: Salalah;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=17.021769,54.089239">Direction</a></p>'+
-               '</div>'+
-               '</div>';
-
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
-
-               marker4.addListener('click', function() {
-                 infowindow.open(map, marker4);
-              });
+        //      marker2.addListener('click', function() {
+        //        infowindow.open(map, marker2);
+        //     });
+        //      /*markers[0].addListener('click', function() {
+        //       infowindow.open(map, markers[0]);
+        //    });*/
 
 
-            }, timeout);
-          }
+        // }, timeout);
 
-          function addMarkerWithTimeout2_1(position, timeout) {
-             window.setTimeout(function() {
-               var marker5 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Salalah, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
+        // }
 
-               var contentString = '<div id="content">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah 2_1</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black;">Office Name: Salalah 2_1;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=17.037646,54.177997">Direction</a></p>'+
-               '</div>'+
-               '</div>';
+        // function addMarkerWithTimeout1_2(position, timeout) {
+        //    window.setTimeout(function() {
+        //      var marker3 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Muscat1_2, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
 
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
+        //      var contentString = '<div id="content">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black;">Muscat 1_2</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black;">Office Name: Muscat 1_2;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=23.557038,58.354178">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
 
-               marker5.addListener('click', function() {
-                 infowindow.open(map, marker5);
-              });
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
+
+        //      marker3.addListener('click', function() {
+        //        infowindow.open(map, marker3);
+        //     });
+
+        //   }, timeout);
+        // }
+
+        // function addMarkerWithTimeout2(position, timeout) {
+
+        //    window.setTimeout(function() {
+        //      var marker4 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Salalah, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
+
+        //      var contentString = '<div id="content">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black;">Office Name: Salalah;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=17.021769,54.089239">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
+
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
+
+        //      marker4.addListener('click', function() {
+        //        infowindow.open(map, marker4);
+        //     });
 
 
-            }, timeout);
-          }
+        //   }, timeout);
+        // }
 
-          function addMarkerWithTimeout2_2(position, timeout) {
-             window.setTimeout(function() {
-               var marker6 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Salalah, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
+        // function addMarkerWithTimeout2_1(position, timeout) {
+        //    window.setTimeout(function() {
+        //      var marker5 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Salalah, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
 
-               var contentString = '<div id="content">'+
-               '<div id="siteNotice">'+
-               '</div>'+
-               '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah 2_2</h1>'+
-               '<div id="bodyContent">'+
-               '<p style="color:black;">Office Name: Salalah 2_2;<br>' +
-               'Office Adress: Adress1234;<br>'+
-               'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-               '<p><a href="https://www.google.com/maps?daddr=17.051761,54.019725">Direction</a></p>'+
-               '</div>'+
-               '</div>';
+        //      var contentString = '<div id="content">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah 2_1</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black;">Office Name: Salalah 2_1;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=17.037646,54.177997">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
 
-               var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
 
-               marker6.addListener('click', function() {
-                 infowindow.open(map, marker6);
-              });
+        //      marker5.addListener('click', function() {
+        //        infowindow.open(map, marker5);
+        //     });
 
-            }, timeout);
-          }
 
-          function addMarkerWithTimeout3(position, timeout) {
-             window.setTimeout(function() {
-              var marker7 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Dhofar, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
+        //   }, timeout);
+        // }
 
-              var contentString = '<div id="content">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<h1 id="firstHeading" class="firstHeading" style="color:black;">Dhofar</h1>'+
-              '<div id="bodyContent">'+
-              '<p style="color:black;">Office Name: Dhofar;<br>' +
-              'Office Adress: Adress1234;<br>'+
-              'Office Number: 1234567;<br>'+
-               'Email: support@customs.gov.om;</p>'+
-              '<p><a href="https://www.google.com/maps?daddr=17.068712,54.142662">Direction</a></p>'+
-              '</div>'+
-              '</div>';
+        // function addMarkerWithTimeout2_2(position, timeout) {
+        //    window.setTimeout(function() {
+        //      var marker6 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Salalah, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
 
-              var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
+        //      var contentString = '<div id="content">'+
+        //      '<div id="siteNotice">'+
+        //      '</div>'+
+        //      '<h1 id="firstHeading" class="firstHeading" style="color:black;">Salalah 2_2</h1>'+
+        //      '<div id="bodyContent">'+
+        //      '<p style="color:black;">Office Name: Salalah 2_2;<br>' +
+        //      'Office Adress: Adress1234;<br>'+
+        //      'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //      '<p><a href="https://www.google.com/maps?daddr=17.051761,54.019725">Direction</a></p>'+
+        //      '</div>'+
+        //      '</div>';
 
-              marker7.addListener('click', function() {
-                 infowindow.open(map, marker7);
-              });
+        //      var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
 
-           }, timeout);
-          }
+        //      marker6.addListener('click', function() {
+        //        infowindow.open(map, marker6);
+        //     });
 
-          function addMarkerWithTimeout3_1(position, timeout) {
-             window.setTimeout(function() {
-              var marker8 = new google.maps.Marker({
-                 position: position,
-                 map: map,
-                 title: "Office name: Dhofar, number:12345678, Adress: ---",
-                 animation: google.maps.Animation.DROP
-              });
+        //   }, timeout);
+        // }
 
-              var contentString = '<div id="content">'+
-              '<div id="siteNotice">'+
-              '</div>'+
-              '<h1 id="firstHeading" class="firstHeading" style="color:black;">Dhofar 3_1</h1>'+
-              '<div id="bodyContent">'+
-              '<p style="color:black;">Office Name: Dhofar 3_1;<br>' +
-              'Office Adress: Adress1234;<br>'+
-              'Office Number: 1234567;<br>'+
-              'Email: support@customs.gov.om;</p>'+
-              '<p><a href="https://www.google.com/maps?daddr=17.092702,54.084694">Direction</a></p>'+
-              '</div>'+
-              '</div>';
+        // function addMarkerWithTimeout3(position, timeout) {
+        //    window.setTimeout(function() {
+        //     var marker7 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Dhofar, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
 
-              var infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                maxWidth: 400,
-                maxHeight: 40
-             });
+        //     var contentString = '<div id="content">'+
+        //     '<div id="siteNotice">'+
+        //     '</div>'+
+        //     '<h1 id="firstHeading" class="firstHeading" style="color:black;">Dhofar</h1>'+
+        //     '<div id="bodyContent">'+
+        //     '<p style="color:black;">Office Name: Dhofar;<br>' +
+        //     'Office Adress: Adress1234;<br>'+
+        //     'Office Number: 1234567;<br>'+
+        //      'Email: support@customs.gov.om;</p>'+
+        //     '<p><a href="https://www.google.com/maps?daddr=17.068712,54.142662">Direction</a></p>'+
+        //     '</div>'+
+        //     '</div>';
 
-              marker8.addListener('click', function() {
-                 infowindow.open(map, marker8);
-              });
+        //     var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
 
-           }, timeout);
-          }
+        //     marker7.addListener('click', function() {
+        //        infowindow.open(map, marker7);
+        //     });
 
-          function clearMarkers() {
+        //  }, timeout);
+        // }
+
+        // function addMarkerWithTimeout3_1(position, timeout) {
+        //    window.setTimeout(function() {
+        //     var marker8 = new google.maps.Marker({
+        //        position: position,
+        //        map: map,
+        //        title: "Office name: Dhofar, number:12345678, Adress: ---",
+        //        animation: google.maps.Animation.DROP
+        //     });
+
+        //     var contentString = '<div id="content">'+
+        //     '<div id="siteNotice">'+
+        //     '</div>'+
+        //     '<h1 id="firstHeading" class="firstHeading" style="color:black;">Dhofar 3_1</h1>'+
+        //     '<div id="bodyContent">'+
+        //     '<p style="color:black;">Office Name: Dhofar 3_1;<br>' +
+        //     'Office Adress: Adress1234;<br>'+
+        //     'Office Number: 1234567;<br>'+
+        //     'Email: support@customs.gov.om;</p>'+
+        //     '<p><a href="https://www.google.com/maps?daddr=17.092702,54.084694">Direction</a></p>'+
+        //     '</div>'+
+        //     '</div>';
+
+        //     var infowindow = new google.maps.InfoWindow({
+        //       content: contentString,
+        //       maxWidth: 400,
+        //       maxHeight: 40
+        //    });
+
+        //     marker8.addListener('click', function() {
+        //        infowindow.open(map, marker8);
+        //     });
+
+        //  }, timeout);
+        // }
+
+        function clearMarkers() {
 /*           var marker1.setMap(null);
-            marker2.setMap(null);
-            marker3.setMap(null);
-            marker4.setMap(null);
-            marker5.setMap(null);
-            marker6.setMap(null);
-            marker7.setMap(null);
-            marker8.setMap(null);*/
-         }
-         init();
+          marker2.setMap(null);
+          marker3.setMap(null);
+          marker4.setMap(null);
+          marker5.setMap(null);
+          marker6.setMap(null);
+          marker7.setMap(null);
+          marker8.setMap(null);*/
+       }
+       init();
 
       </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz-yeDSbEEuS2PZiWn_6xQhPMVzTwDPgE&callback=initMap"></script>
-      <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz-yeDSbEEuS2PZiWn_6xQhPMVzTwDPgE"></script>
       <script src="js/headhesive.min.js"></script>
       <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
-      
+      <script type="text/javascript">
+        (function() {
+          function addMarkerWithTimeout(newlat, newlng, timeout, location, address, phone, email) {
+            window.setTimeout(function() {
+            var marker1 = new google.maps.Marker({
+               position: {lat: newlat, lng: newlng},
+               map: map,
+               title: "Location: "+location+", Phone:"+phone+", Adress: ---",
+               animation: google.maps.Animation.DROP
+            });
+
+            var contentString = '<div id="content" style="">'+
+             '<div id="siteNotice">'+
+             '</div>'+
+             '<h1 id="firstHeading" class="firstHeading" style="color:black; font-size: 20px;">'+location+'</h1>'+
+             '<div id="bodyContent">'+
+             '<p style="color:black; font-size: 10x;">' +
+             'Adress: '+address+',<br>'+
+             'Phone: '+phone+',<br>'+
+             'Email: '+email+'</p>'+
+             '<p><a href="https://www.google.com/maps?daddr='+newlat+','+newlng+'">Direction</a></p>'+
+             '</div>'+
+             '</div>';
+
+            var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 500
+            });
+
+            marker1.addListener('click', function() {
+               infowindow.open(map, marker1);
+            });
+
+            }, timeout);
+          }
+
+          $('#category').on('change', function(){
+            var loc_lat = parseFloat($('option:selected', this).attr('data-lat'));
+            var loc_lng = parseFloat($('option:selected', this).attr('data-lng'));
+            var loc_name = this.options[this.selectedIndex].value;
+            var classname = loc_name+'_office';            
+            $('.suboptions').hide();
+            $('#subcategory').prop('selectedIndex',0)
+            $('.'+classname).show();      
+
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: {lat: loc_lat, lng: loc_lng},
+              styles: styles
+            });
+            $('.'+classname).each(function(index){
+              var ofc_lat = parseFloat($(this).attr('data-lat'));
+              var ofc_lng = parseFloat($(this).attr('data-lng'));
+              var ofc_address = $(this).attr('data-address');
+              var ofc_phone = $(this).attr('data-phone');
+              var ofc_email = $(this).attr('data-email');
+              var ofc_name = $(this).attr('value');
+              // clearMarkers();
+              addMarkerWithTimeout(ofc_lat, ofc_lng, index * 200, ofc_name, ofc_address, ofc_phone, ofc_email);
+            })
+          });
+
+          $('#subcategory').on('change', function(){
+            var loc_lat = parseFloat($('option:selected', this).attr('data-lat'));
+            var loc_lng = parseFloat($('option:selected', this).attr('data-lng'));
+            var loc_name = this.options[this.selectedIndex].value;
+            var ofc_address = $('option:selected', this).attr('data-address');
+            var ofc_phone = $('option:selected', this).attr('data-phone');
+            var ofc_email = $('option:selected', this).attr('data-email');
+            var ofc_loc = $('option:selected', this).attr('data-loc');
+            var classname = ofc_loc+'_office';
+            $('.'+classname).show();      
+            console.log(ofc_loc)  ;
+            // clearMarkers();
+            addMarkerWithTimeout(loc_lat, loc_lng, 0 * 200, loc_name, ofc_address, ofc_phone, ofc_email);
+            map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 17,
+              center: {lat: loc_lat, lng: loc_lng},
+              styles: styles
+            });
+          });
+
+          $('select#category').html('');
+          $('select#category').append('<option data-icon="glyphicon-home" value="">Location</option>');
+          $('select#subcategory').html('');
+          $('select#subcategory').append('<option value="">Select Office</option>');
+
+
+          var map_json = "map.json";
+          $.getJSON( map_json, {
+            format: "json"
+          }).done(function( data ) {
+            var inc = 0;
+            $.each( data, function( loc, item ) {
+              var lat = parseFloat(item[0].lat);
+              var lng = parseFloat(item[0].lng);              
+              if(loc=="location0"){
+                var name = item[0].name;
+                map = new google.maps.Map(document.getElementById('map'), {
+                   zoom: 5,
+                   center: {lat: lat, lng: lng},
+                   styles: styles
+                });
+              }
+              else{
+                var name = item[0].name;
+                $('#category').append($('<option data-lat="'+lat+'" data-lng="'+lng+'" value="'+name+'">'+name+'</option>' ));
+                for (var i = 0; i < item.length; i++) {
+                  var office_name = item[i].office_name;
+                  var office_address = item[i].office_address;
+                  var office_phone = item[i].office_phone;
+                  var office_email = item[i].office_email;
+                  var office_lat = item[i].lat;
+                  var office_lng = item[i].lng;
+                  $('#subcategory').append($('<option class="'+name+'_office suboptions" data-loc="'+name+'" data-lat="'+office_lat+'" data-lng="'+office_lng+'" data-address="'+office_address+'" data-phone="'+office_phone+'" data-email="'+office_email+'" value="'+office_name+'">'+office_name+'</option>'));
+                  // if(loc=="location1"){
+                    // console.log(name+'_office')
+                    $('.'+name+'_office').hide();            
+                  // }
+                }
+                addMarkerWithTimeout(lat, lng, inc * 200, name, office_address, office_phone, office_email);
+                inc++;
+              }
+            });
+          });
+        })();
+
+      </script>
    </body>
    </html>
