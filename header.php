@@ -1,3 +1,4 @@
+   <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
    <div class="container-fluid contacts">
       <div class="container">
          <div class="row">
