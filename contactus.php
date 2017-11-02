@@ -19,6 +19,18 @@
   <link rel='stylesheet' id='Patua+One-css' href='http://fonts.googleapis.com/css?family=Patua+One:100,300,400,400italic,700'>
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
+<script type="text/javascript">
+    var correctCaptcha = function(response) {
+        if(response.length == 0){
+            console.log('Not verified')
+            return false;
+        }
+        else{
+            console.log('verified')
+            return true;
+        }
+    };
+</script>
 </head>
 
 <body>
@@ -107,7 +119,7 @@
                 </div>
                 <div class="col-md-12">
                     <div class="form-group text-center">
-                        <div class="g-recaptcha" data-sitekey="6LeY4C0UAAAAACjRofNx9_DWD0R1nado_oXEcY0i"></div>
+                        <div class="g-recaptcha" data-callback="correctCaptcha" data-sitekey="6Lf-ozYUAAAAAP1jqHN_EWUcGdKfoGWcTfjCiev_" ></div>
                     </div>
                 </div>
                 <div class="col-md-12">
@@ -133,6 +145,8 @@
 <script src="js/headhesive.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
 
 </body>
 
