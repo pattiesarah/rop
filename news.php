@@ -41,11 +41,7 @@
 
     <div class="container articles news">
       <div class="row">
-          <div class="col-md-12 text-center">
-            <h1><span class="border_bottom">Articles</span></h1>
-          </div> 
-
-          <div class="col-md-12 news-search">
+          <div class="col-md-12 news-search" style="margin-top: 40px;">
             <div class="form-group pull-right" style="margin-right: 20px;">
               <select class="form-control">
                 <option>Search by Year</option>
@@ -67,70 +63,78 @@
           <div class="col-md-12">
             <div class="col-md-3 col-sm-6">
                <img src="images/registration_trade.png" alt="">
-               <h2>New Customs Fees</h2>
-               <h3>Decision #38/2017</h3>
-               <hr align="right">
-               <p>To amend the fees for services provided by Directorate General of Customs.</p>
-               <a class="more" href="news-detail.php">Read..</a>
+               <div class="article-card">
+                 <h2>New Customs Fees</h2>
+                 <h3>Decision #38/2017</h3>
+                 <p>To amend the fees for services provided by Directorate General of Customs.</p>
+                 <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/extention_of_temporary.png" alt="">
+               <div class="article-card">
                <h2>New Broker Fees</h2>
                <h3>Decision #37/2017</h3>
-               <hr align="right">
                <p>Amending some of the provisions of the executive decree organizing the brokering activity</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/transfer_consignment.png" alt="">
+               <div class="article-card">
                <h2>Transfer consignment</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/temporary_import.png" alt="">
+               <div class="article-card">
                <h2>Temporary import</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
           </div>
 
           <div class="col-md-12 marginTop50">
             <div class="col-md-3 col-sm-6">
                <img src="images/registration_trade.png" alt="">
+               <div class="article-card">
                <h2>Registration trade partner</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/extention_of_temporary.png" alt="">
+               <div class="article-card">
                <h2>Extension of temporary</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/transfer_consignment.png" alt="">
+               <div class="article-card">
                <h2>Transfer consignment</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
             <div class="col-md-3 col-sm-6">
                <img src="images/temporary_import.png" alt="">
+               <div class="article-card">
                <h2>Temporary import</h2>
                <h3>Services provided</h3>
-               <hr align="right">
                <p>Declaration processing e-Service enables the Importer/Exporter (or their authorized goods)</p>
                <a class="more" href="news-detail.php">Read..</a>
+               </div>
             </div>
           </div>
       </div>

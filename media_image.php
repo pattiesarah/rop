@@ -43,11 +43,6 @@
     <div class="innercontent" style="background: #f7f7f7">
         <div class="row">
           <div class="col-md-12 text-center media-center">
-            <h1>
-                <span class="fa-stack">
-                <i class="fa fa-file-image-o fa-stack-1x"></i>
-                </span><span class="border_bottom">Images</span>
-            </h1>
             <div class="container">
               <div id="image-section" class="thumbnail_img">
                 <div class="col-md-3"><a href="album1.php"><img src="images/registration_trade.png" alt=""><h5>Album 1</h5></a></div>

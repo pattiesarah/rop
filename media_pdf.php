@@ -43,11 +43,6 @@
     <div class="innercontent" style="background: #f7f7f7">
       <div class="row">
         <div class="col-md-12 media-center">
-          <h1 class="text-center">
-            <span class="fa-stack">
-            <i class="fa fa-file-pdf-o fa-stack-1x"></i>
-            </span><span class="border_bottom">PDF</span>
-          </h1>
           <div class="container">
             <div id="pdf-section">
               <table class="table table-bordered table-responsive table-striped">

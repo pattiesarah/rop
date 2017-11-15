@@ -30,12 +30,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-6 login_box">
-        <div class="login_box_inner">
-          <button class=" btn btn-success btn-lg">Login to Bayan System</button>
-      </div>
-      </div>
-      <div class="col-md-6 login_box">
+      <div class="col-md-12 login_box">
         <div class="login_box_inner">
         <button class=" btn btn-success btn-lg">Login to Staff Services</button>
       </div>

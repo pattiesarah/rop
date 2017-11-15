@@ -42,13 +42,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center socials media-center">
-          <h1>
-            <span class="fa-stack">
-              <i class="fa fa-share-square-o fa-stack-1x" style="font-size: inherit;"></i>
-            </span>
-            <span class="border_bottom">Social Media</span>
-          </h1>
+        <div class="col-md-12 text-center socials media-center" style="margin-top: 50px !important; background-color: transparent;">
           <div class="col-md-4 col-sm-4">
             <div class="twitter-div">
                <div class="text-center">

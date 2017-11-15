@@ -45,6 +45,11 @@ a.more{
 .marginB20{
   margin-bottom: 20px;
 }
+
+.marginB40{
+  margin-bottom: 40px;
+}
+
 .border_bottom {
   position: relative;
 }
@@ -71,6 +76,7 @@ a.more{
   line-height: 20px;
   color: #a1a1a1 !important;
 }
+
 .contacts {
   background-color: #000000;
   padding-top: 10px;
@@ -246,7 +252,7 @@ a.more{
   border-color: rgb(231, 231, 231);
   box-shadow: none;
   outline: none;
-  right: 150px;
+  /*right: 150px;*/
 }
 
 .menu .navbar-collapse form[role="search"] input {
@@ -280,8 +286,10 @@ a.more{
 
 @media (min-width: 1192px) {
   .navbar-nav{
-    position: absolute;
-    right: 17%;
+    /*position: absolute;*/
+    /*right: 17%;*/
+    float: right;
+    margin-right: 20px;
   }
 }
 @media (max-width: 1192px) {
@@ -739,22 +747,29 @@ a.more{
 .articles p{
   /*height: 96px;*/
 }
-.bayan-div{
+.service-div{
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+.bayan-div{
+  padding: 10px 20px 22px 20px;
+  background: #fff;
+  margin-bottom: 15px;
 }
 .bayan-div h1{
   color: #CF5C4E;
+  font-size: 28px;
 }  
 .bayan-div h2{
-    margin-top: 10px;
+  margin-top: 10px;
+  font-size: 24px;
 }    
 .bayan-div a{
   background-color: #02bf55;
   color: #ffffff;
-  padding: 6px 25px;
-  font-size: 22px;
-  margin-top: 15px;
+  padding: 4px 16px;
+  font-size: 18px;
+  margin-top: 5px;
   display: inline-block;
 }
 
@@ -809,10 +824,17 @@ a.more{
 .articles h1 , .eservices h1{
   font-size: 36px;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
-
+.article-card{
+  border-top: 2px solid #00bcf2;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+.article-card h2{
+  margin-top: 0;
+}  
 .articles h1 span {
   color: #333;
 }
@@ -1662,6 +1684,7 @@ label:before {
 }
 
 .news-scroller{
+  /*position: absolute;*/
 }
 .news-scroller h4{
     line-height: 24px;
@@ -1710,7 +1733,7 @@ label:before {
 }  
 
 .circular, .statistics{
-  padding-top: 22px;
+  /*padding-top: 22px;*/
 }
 a.content_link{
   text-decoration: none;
@@ -1723,7 +1746,7 @@ a.content_link{
   border-style: solid;
   padding: 16px 2px;
   text-align: center;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(0,0,0,0.1);
 }
 a.content_link:hover{
   background-color: #008DDF;

@@ -5,7 +5,7 @@
             <div class="col-md-12">
                <div class="col-md-5 col-sm-12 col-xs-12 top-box-left">
                   <i class="fa fa-phone" aria-hidden="true"><a href="tel:+61383766284">+968-24349000</a></i>
-                  <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:info@customs.goc.om">info@customs.goc.om</a></i>
+                  <i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:info@customs.goc.om">info@customs.gov.om</a></i>
                </div>
                <div class="col-md-7 col-sm-12 col-xs-12 top-box-right">
                   <a href="https://www.facebook.com/ropomancustoms/"><i title="Facebook" class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -20,7 +20,7 @@
                   <a class="mini-menu" href="news.php">News</a>
                   <a class="mini-menu" href="about.php">About</a>
                   <a class="mini-menu" href="contactus.php">Contact</a>
-                  <a class="mini-menu" href="login.php">Login & Registration</a>
+                  <a class="mini-menu" href="login.php">Staff Login</a>
                </div>
             </div>
          </div>
@@ -36,7 +36,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="index.php"><img class="scale-with-grid" src="images/logo.jpg" /></a>
+               <a class="navbar-brand" href="index.php"><img class="scale-with-grid" src="images/rop-bayan-logo.jpg" /></a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                <ul class="nav navbar-nav">
@@ -50,7 +50,7 @@
                      <a href="reports.php">Downloads</a>
                   </li>
                   <li>
-                     <a href="customs_procedures.php">Custom Procedures</a>
+                     <a href="customs_procedures.php">Customs Procedures</a>
                   </li>
                   <li>
                      <a href="inner.php">Laws & Regulations</a>
@@ -68,9 +68,6 @@
                      </span>
                   </div>
                </form>
-               <div class="input-group bayan">
-                  <a href="index.php" class="text-center"><img src="images/bayan.png" width="80px" alt="Bayan"/></a>
-               </div>
                <div class="col-xs-12">
                   <div class="input-group searchtwo">
                      <input type="text" class="form-control" placeholder="Search" />

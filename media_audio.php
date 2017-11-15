@@ -43,11 +43,6 @@
     <div class="innercontent" style="background: #f7f7f7">
         <div class="row">
           <div class="col-md-12 text-center media-center">
-            <h1>
-                <span class="fa-stack">
-                <i class="fa fa-headphones fa-stack-1x"></i>
-                </span><span class="border_bottom">Audio</span>
-            </h1>
             <div class="container">
               <div id="audio-section">
                 <div class="col-md-4"><iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/323676781&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe><h5>Audio 1</h5></div>

@@ -43,11 +43,6 @@
     <div class="innercontent" style="background: #f7f7f7">
         <div class="row">
           <div class="col-md-12 text-center media-center">
-            <h1>
-                <span class="fa-stack">
-                <i class="fa fa-play fa-stack-1x"></i>
-                </span><span class="border_bottom">Videos</span>
-            </h1>
             <div class="container">
               <div id="video-section">
                 <div class="col-md-4"><object data="http://www.youtube.com/embed/W7qWa52k-nE"></object><h5>Video 1</h5></div>
