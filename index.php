@@ -79,7 +79,7 @@
         <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="bayan-div col-md-12 text-center">
              <h1>BAYAN</h1>
-             <h2>Flexile, Accuracy & Fast clearance of goods</h2>
+             <h2>Flexible, Accurate & Fast clearance of goods</h2>
              <p>The online single window/one-stop service offering from Royal Oman Police (ROP) - Directorate General of Customs</p>
              <a href="login.php">Login to Bayan</a>
           </div>         
