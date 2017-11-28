@@ -30,7 +30,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h2><a href="index.php"><span>Home</span></a> > <a href="traveller.php">Traveller Services</a></h2>
+                <h2><a href="index.php"><span>Home</span></a> > <a href="individual.php">Traveller Services</a></h2>
             </div>
             <div class="col-md-12">
                 <h1>Traveller Services</span></h1>
@@ -41,20 +41,41 @@
 
 <div class="container innercontent business">
   <div class="row">
-    <div class="col-md-12">
-      <div class="col-md-4 col-sm-4 col-xs-6 marginB20">
-        <div class="box text-center">
-          <a href="individual_service_1.php">
-            <h4>Import</h4>
-          </a>
-        </div>
+    <div class="col-md-9">
+      <h3>General Instructions</h3>
+      <p><span>Service delivered:</span> Individual Import</p>
+      <p><span>Title of service:</span> Individual import<p>
+      <p><span>Description of service:</span>  Individual import<p>
+      <p><span>Beneficiary:</span> Individual<p>
+      <p><span>Provisions/ terms:</span>
+        <ul>
+          <li>The company should be registered in Bayan system.</li>
+          <li>Goods or items should not be prohibited.</li>
+          <li>To satisfy terms and requirements of import according to the restricted items.</li>
+          <li>To fulfill terms and conditions of individual import (terms and conditions link)</li>
+          <li>Import individual link</li>
+        </ul>
+      </p>
+    </div>
+    <div class="col-md-3 side_menu marginTop50" style="padding-left: 0px; padding-right: 0px;">
+      <div class="col-md-12">
+        <h4>Related Links</h4>
+        <hr>
       </div>
-      <div class="col-md-4 col-sm-4 col-xs-6 marginB20">
-        <div class="box text-center">
-          <a href="individual_service_2.php">
-            <h4>Temporary Export</h4>
-          </a>
-        </div>
+      <div class="col-md-12 active">
+        <a href="traveller.php"><i class="fa fa-download" aria-hidden="true"></i>General Instructions</a>
+      </div>
+      <div class="col-md-12">
+        <a href="traveller_1.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Restricted Goods</a>
+      </div>
+      <div class="col-md-12">
+        <a href="traveller_2.php"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Prohibited Goods</a>
+      </div>      
+      <div class="col-md-12">
+        <a href="traveller_3.php"><i class="fa fa-window-close" aria-hidden="true"></i>Exemptions</a>
+      </div>
+      <div class="col-md-12">
+        <a href="traveller_4.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>General Regulations</a>
       </div>
     </div>
   </div>
@@ -63,7 +84,6 @@
 <?php
     include('footer.php');
   ?>
-
 
 
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

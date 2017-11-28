@@ -111,7 +111,7 @@
             <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-briefcase" aria-hidden="true"></i></p><p class="title">Business Services</p></a></div>
             <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-user-circle-o" aria-hidden="true"></i></p><p class="title">Individual Services</p></a></div>
             <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-laptop" aria-hidden="true"></i></p><p class="title">Government Services</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p class="title">Traveller Services</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="traveller.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p class="title">Traveller Services</p></a></div>
             <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="circular.php"><p><i class="fa fa-file-text-o" aria-hidden="true"></i></p><p class="title circular">Circulars</p></a></div>
             <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="reports.php"><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><p class="title statistics">Statistics</p></a></div>
           </div>

@@ -1927,6 +1927,18 @@ a.content_link:hover i{
   padding-top: 15px;
   display: flow-root;
 }
+.ui-accordion .ui-accordion-header{
+    background: #012234;
+    color: #fff;
+    border: 1px solid #1E4B66;
+    outline: none;
+}
+.ui-accordion .ui-accordion-header-active{
+    background: #1E4B66;
+}
+.ui-accordion-header-collapsed .ui-icon, .ui-state-hover .ui-icon{
+  background-image: url(http://code.jquery.com/ui/1.12.1/themes/base/images/ui-icons_ffffff_256x240.png) !important;
+}
 @media (min-width: 320px) and (max-width: 440px) {
   .circular, .statistics{
     padding-top: 21px;

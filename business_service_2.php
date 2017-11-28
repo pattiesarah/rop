@@ -42,7 +42,7 @@
 <div class="container innercontent business">
   <div class="row">
     <div class="col-md-9">
-      <h3>Temporary Export</h3>
+      <h3>Export</h3>
       <p><span>Service delivered:</span>  Temporary Export</p>
       <p><span>Title of service:</span> Temporary Export Application<p>
       <p><span>Description of service:</span> Applying for temporary export before creating a customs declaration.<p>
@@ -66,10 +66,13 @@
         <a href="business_service_1.php"><i class="fa fa-download"></i>Import</a>
       </div>
       <div class="col-md-12 active">
-        <a href="business_service_2.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Temporary Export</a>
+        <a href="business_service_2.php"><i class="fa fa-cloud-upload" aria-hidden="true"></i>Export</a>
       </div>
       <div class="col-md-12">
-        <a href="business_service_3.php"><i class="fa fa-cloud-download" aria-hidden="true"></i>Temporary Import</a>
+        <a href="business_service_3.php"><i class="fa fa-cloud-download" aria-hidden="true"></i>Transit</a>
+      </div>
+      <div class="col-md-12">
+        <a href="business_service_4.php"><i class="fa fa-cloud-download" aria-hidden="true"></i>Transshipping</a>
       </div>
     </div>
   </div>
