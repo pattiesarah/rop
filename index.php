@@ -28,6 +28,9 @@
     include('header.php');
   ?>
 
+
+
+
   <div class="container-fluid" style="background: #EDEEEE; padding-top: 15px;">
     <div class="container">
       <div class="row">
@@ -37,6 +40,8 @@
                  <div class="item slide1 active">
                     <div class="bs-slider-overlay">
                     </div>
+
+
                     <div class="container-fluid banner slide1">
                              <div class="col-md-12 text-center">
                                 <h1>R<span>oyal </span>O<span>man </span>P<span>olice</span></h1>
@@ -45,6 +50,7 @@
                              </div>
                     </div>
                  </div>
+
                  <div class="item slide2">
                     <div class="bs-slider-overlay"></div>
                     <div class="container-fluid banner slide2">
@@ -66,6 +72,7 @@
                     </div>
                  </div>
               </div>
+
               <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
                  <span class="fa fa-angle-left" aria-hidden="true"></span>
                  <span class="sr-only">Previous</span>
@@ -108,12 +115,12 @@
     <div class="container">
        <div class="row">
           <div class="header-service-block">
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-briefcase" aria-hidden="true"></i></p><p class="title">Business Services</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-user-circle-o" aria-hidden="true"></i></p><p class="title">Individual Services</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-laptop" aria-hidden="true"></i></p><p class="title">Government Services</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="traveller.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p class="title">Traveller Services</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="circular.php"><p><i class="fa fa-file-text-o" aria-hidden="true"></i></p><p class="title circular">Circulars</p></a></div>
-            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="reports.php"><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><p class="title statistics">Statistics</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-briefcase" aria-hidden="true"></i></p><p>Business Services</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="individual_service_1.php"><p><i class="fa fa-user-circle-o" aria-hidden="true"></i></p><p>Individual Services</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="business_service_1.php"><p><i class="fa fa-laptop" aria-hidden="true"></i></p><p>Government Services</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="traveller.php"><p><i class="fa fa-plane" aria-hidden="true"></i></p><p>Traveller Services</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="circular.php"><p><i class="fa fa-file-text-o" aria-hidden="true"></i></p><p class="circular">Circulars</p></a></div>
+            <div class="col-md-2 col-sm-2 col-xs-4"><a class="content_link " href="reports.php"><p><i class="fa fa-line-chart" aria-hidden="true"></i></p><p class="statistics">Statistics</p></a></div>
           </div>
        </div>      
     </div>
@@ -165,40 +172,6 @@
     </div>
   </div>
 
-  <div class="container-fluid socials">
-    <div class="container">
-       <div class="row">
-          <div class="col-md-12">
-             <h1><span class="border_bottom">Social Media</span></h1>
-             <div class="col-md-4 hidden-sm hidden-xs">
-                <div class="twitter-div">
-                   <div class="text-center">
-                      <p><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</p>
-                   </div>
-                   <a class="twitter-timeline" data-width="370" data-height="450" href="https://twitter.com/omancustoms">Tweets by omancustoms</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                </div>   
-             </div>
-             <div class="col-md-4 hidden-sm hidden-xs">
-                <div class="insta-div">
-                   <div class="text-center">
-                   <p><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</p>
-                   </div>
-                   <iframe src="http://auen.ru/instablock.php?u=royal_oman_police&count=12&w=100&fw=370&fh=450&il=0&tb=Royal Oman Police&cb=2&st=1&tl=View&cl=1" style="width:100%;height:450px;border: 0px;"></iframe>
-                </div>
-             </div>
-             <div class="col-md-4 hidden-sm hidden-xs">
-                <div class="fb-div">
-                   <div class="text-center">
-                      <p><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</p>
-                   </div>
-                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fropomancustoms%2F&tabs=timeline&width=370&height=450&small_header=false&adapt_container_width=true&hide_cover=true&show_facepile=true&appId" width="100%" height="452" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-  </div>
-
   <div class="container-fluid md-socials">
     <div class="container">
        <div class="row">
@@ -236,7 +209,6 @@
         </div>
       </div>            
       <div id="map"></div>
-      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117009.9018939686!2d58.3646958!3d23.5842615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e91ffa8879aafc9%3A0xdb53876d0d79a72c!2z0JzQsNGB0LrQsNGCLCDQntC80LDQvQ!5e0!3m2!1sru!2sby!4v1493156983054" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe> -->
     </div>
   </div>
    
@@ -375,7 +347,6 @@
     }
 ];
 
-  init();
   </script>
 
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBz-yeDSbEEuS2PZiWn_6xQhPMVzTwDPgE"></script>
